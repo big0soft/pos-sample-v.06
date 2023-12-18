@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+rootProject.name = "POS Sample"
+include ':app'
+//include ':ISO8583_V1.2'
+//include ':spdh_V1.8'
+//include ':nexgo-smartpos-sdk-v3.06.001_20221108'
